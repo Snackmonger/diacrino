@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --color1: #385496;
+    --color2: #182848;
+    --color3: #f9f2e3c0;
+    --brand-color: linear-gradient(
+        to bottom right, 
+        var(--color1), 
+        var(--color2)
+    );
+    --brand-color-reverse: linear-gradient(
+        to top right,
+        var(--color1), 
+        var(--color2)
+    );
+}
+
+
+html {
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+img {
+  display: block;
+  position: relative;
+
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+
+  font-weight: 300;
+  font-family: sans-serif;
+  text-align: center;
+}
+img::before {
+  content: "We're sorry, the image below is broken :(";
+  display: block;
+  margin-bottom: 10px;
+}
+
+img::after {
+  content: "(url: " attr(src) ")";
+  display: block;
+  font-size: 12px;
+}
