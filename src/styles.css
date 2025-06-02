@@ -23,6 +23,7 @@ html {
     margin: 0;
     padding: 0;
 }
+
 img {
   display: block;
   position: relative;
@@ -36,14 +37,15 @@ img {
   font-family: sans-serif;
   text-align: center;
 }
+
 img::before {
   content: "We're sorry, the image below is broken :(";
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 0.8rem;
 }
 
 img::after {
   content: "(url: " attr(src) ")";
   display: block;
-  font-size: 12px;
+  font-size: 1rem;
 }

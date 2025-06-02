@@ -1,0 +1,23 @@
+    <section class="information-area" [style.width]="helpMenuWidth()">
+      <a
+        href="javascript:void(0)"
+        class="close-button"
+        (click)="closeHelpMenu()"
+        >&times;</a
+      >
+      <section class="description-area">
+        <ul>
+        @for (line of description(); track line) {
+        <li>{{ line }}</li>
+        }
+      </ul>
+      </section>
+      <section class="rules-area">
+        <h1>Diacritic Combinations</h1>
+        <ul>
+        @for (rule of rules(); track rule) {
+        <li>{{ rule }}</li>
+        }
+        </ul>
+      </section>
+    </section>

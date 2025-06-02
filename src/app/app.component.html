@@ -1,52 +1,21 @@
-<!-- 
-Defines a help menu separate from the main application that is visible when
-summoned by the help button, otherwise should remain hidden.   
--->
-<section class="information-area" [style.width]="navWidth">
-  <a href="javascript:void(0)" class="close-button" (click)="closeNav()"
-    >&times;</a>
-  <section class="description-area">This is the description area</section>
-  <section class="rules-area">This is the rules area</section>
-</section>
-<main>
-
-
-  <!--
-  Defines a space for simple menu options and main logo/app name.
-  -->
-  <header>
-
-    <!--
-    Allows the user to choose the language paradigm
-    for the converter application
-    -->
-    <section class="language-selector">
-      <select>
-        <option value="Greek">Polytonic Greek</option>
-        <option value="Latin">Latin</option>
-        <option value="Devanagari">Devanagari</option>
-      </select>
-    </section>
-
-    <!--
-    The main name or logo of the application.
-    -->
-    <section class="title">
-      <p>{{ title }}</p>
-    </section>
-
-    <!--
-    A button that summons the information area.
-    -->
-    <section class="help-button" (click)="openNav()">Help</section>
-
-  </header>
+<app-help-menu
+  [description]="currentLanguage.description"
+  [rules]="currentLanguage.rules"
+  [helpMenuWidth]="helpMenuWidth"
+  (closeHelpMenuEvent)="closeHelpMenu()"
+  ></app-help-menu>
+  
+  <main>
+    <app-header
+    [selectorOptions]="languageIdentifiers"
+    title="Diacrínō"
+    (openHelpMenuEvent)="openHelpMenu()"
+  ></app-header>
 
   <!--
   Defines the main application space.
   -->
   <section class="main-container">
-
     <!--
     Defines the main elements of the converter application: a place for the
     user to input text, and a corresponding place for converted text to be 
@@ -66,16 +35,13 @@ summoned by the help button, otherwise should remain hidden.
         readonly
         [value]="outputText"
       ></textarea>
-
     </section>
-
   </section>
 
   <!--
   Defines a simple menu of contact and sponsorship links.
   -->
   <footer>
-
     <!--
     Sponsor logos that link to corresponding sponsorship accounts.
     -->

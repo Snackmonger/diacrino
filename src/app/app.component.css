@@ -6,7 +6,6 @@
 /*
 * HEADER AND FOOTER
 */
-header,
 footer {
   height: 10vh;
   width: 100%;
@@ -29,23 +28,23 @@ footer {
   border-top-color: var(--color2);
 }
 
-header {
+/* header {
   top: 0;
   background-image: var(--brand-color);
   border-bottom-style: solid;
   border-bottom-width: 0.35rem;
   border-bottom-color: var(--color2);
-}
+} */
 
-.language-selector,
+/* .language-selector,
 .title,
-.help-button,
+.help-button, */
 .sponsor-logos,
 .home-page {
   width: 33vw;
 }
 
-.title {
+/* .title {
   text-align: center;
 }
 
@@ -53,7 +52,7 @@ header {
   text-align: right;
   padding-right: 1rem;
   cursor: pointer;
-}
+} */
 
 .sponsor-logos,
 .home-page {
@@ -112,7 +111,7 @@ textarea + textarea {
   flex-direction: column;
 }
 
-.information-area {
+/* .information-area {
   height: 100%;
   position: fixed;
   z-index: 1;
@@ -149,7 +148,7 @@ textarea + textarea {
   .information-area a {
     font-size: 18px;
   }
-}
+} */
 
 @media (max-width: 640px) {
   .main-container {
@@ -172,7 +171,7 @@ textarea + textarea {
   font-family: "NewAthena";
 }
 
-.description-area,
+/* .description-area,
 .rules-area {
   border: 0.25rem solid #ccc;
   padding: 1rem;
@@ -182,4 +181,4 @@ textarea + textarea {
 
 .description-area + .rules-area {
   margin-top: 1rem;
-}
+} */

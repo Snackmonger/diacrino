@@ -1,0 +1,24 @@
+<header>
+
+  <section class="language-selector">
+
+    <select>
+      @for (language of selectorOptions(); track language) {
+        <option value="{{ language }}">{{ language }}</option>
+      }
+      @empty {
+        <p>Error loading languages!</p>
+      }
+    </select>
+
+  </section>
+
+  <!--TODO: Design simple SVG logo for the application.-->
+  <section class="title">
+    <p>{{ title() }}</p>
+  </section>
+
+  <!--TODO: Replace 'help' with a language-agnostic help symbol.-->
+  <section class="help-button" (click)="openHelpMenu()">Help</section>
+  
+</header>
