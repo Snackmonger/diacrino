@@ -1,27 +1,24 @@
 :root {
-    --color1: #385496;
-    --color2: #182848;
-    --color3: #f9f2e3c0;
-    --brand-color: linear-gradient(
-        to bottom right, 
-        var(--color1), 
-        var(--color2)
-    );
-    --brand-color-reverse: linear-gradient(
-        to top right,
-        var(--color1), 
-        var(--color2)
-    );
+  --color1: #385496;
+  --color2: #182848;
+  --color3: #f9f2e3;
+  --brand-color: linear-gradient(to bottom right, var(--color1), var(--color2));
+  --brand-color-reverse: linear-gradient(
+    to top right,
+    var(--color1),
+    var(--color2)
+  );
 }
-
 
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-*, *::after, *::before {
-    box-sizing: inherit;
-    margin: 0;
-    padding: 0;
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -48,4 +45,12 @@ img::after {
   content: "(url: " attr(src) ")";
   display: block;
   font-size: 1rem;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
 }
