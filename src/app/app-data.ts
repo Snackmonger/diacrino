@@ -1,18 +1,18 @@
 export const imageLinkData = [
   [
 
-    ["/assets/images/logos/buy_me_a_coffee/bmc-logo.svg", "BuyMeCoffee logo"],
+    ["./assets/images/logos/buy_me_a_coffee/bmc-logo.svg", "BuyMeCoffee logo"],
     [
-      "/assets/images/logos/patreon/PATREON_SYMBOL_1_WHITE_RGB.svg",
+      "./assets/images/logos/patreon/PATREON_SYMBOL_1_WHITE_RGB.svg",
       "Patreon logo"
     ],
     [
-      "/assets/images/logos/ko_fi/kofi_symbol.svg",
+      "./assets/images/logos/ko_fi/kofi_symbol.svg",
       "Patreon logo"
     ]
   ],
   [
-    ["/assets/images/logos/github/github-mark-white.svg", "GitHub logo"]
+    ["./assets/images/logos/github/github-mark-white.svg", "GitHub logo"]
   ]
 ]
 /**
