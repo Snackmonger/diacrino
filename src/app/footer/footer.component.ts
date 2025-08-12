@@ -8,13 +8,17 @@ import { Component, input } from '@angular/core';
 
      <section class="sponsor-logos">
       @for (sponsorImage of sponsorImages(); track sponsorImage[0]) {
-        <img src="{{sponsorImage[0]}}" alt="{{sponsorImage[1]}}">
+      <a href="{{ sponsorImage[2] }}">
+        <img src="{{ sponsorImage[0] }}" alt="{{ sponsorImage[1] }}">
+      </a>
       }
     </section>
 
     <section class="socials">
       @for (socialImage of socialImages(); track socialImage[0]) {
-        <img src="{{socialImage[0]}}" alt="{{socialImage[1]}}">
+        <a href="{{ socialImage[2] }}">
+        <img src="{{ socialImage[0] }}" alt="{{ socialImage[1] }}">
+      </a>
       }
     </section>
   </footer>`,
