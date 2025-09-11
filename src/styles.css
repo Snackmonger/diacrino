@@ -1,14 +1,4 @@
-:root {
-  --color1: #385496;
-  --color2: #182848;
-  --color3: #f9f2e3;
-  --brand-color: linear-gradient(to bottom right, var(--color1), var(--color2));
-  --brand-color-reverse: linear-gradient(
-    to top right,
-    var(--color1),
-    var(--color2)
-  );
-}
+
 
 html {
   box-sizing: border-box;
@@ -23,34 +13,45 @@ html {
 
 img {
   display: block;
-  position: relative;
-
-  width: auto;
   height: auto;
+  width: auto;
   max-width: 100%;
   max-height: 100%;
-
-  font-weight: 300;
-  font-family: sans-serif;
-  text-align: center;
 }
 
-img::before {
-  content: "We're sorry, the image below is broken :(";
-  display: block;
-  margin-bottom: 0.8rem;
-}
-
-img::after {
-  content: "(url: " attr(src) ")";
-  display: block;
-  font-size: 1rem;
-}
 html,
 body {
   height: 100%;
 }
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
+html {
+  color-scheme: dark;
+}
+header,
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 10vh;
+  width: 100%;
+}
+
+main {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+textarea {
+  height: 35vh;
+  width: 90vw;
+  resize: none;
+  font-size: 2.5vh;
+  padding: 1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+select {
+  height: 5vh;
+  margin-top: 1.5em;
+  padding-left: 1.5em;
 }

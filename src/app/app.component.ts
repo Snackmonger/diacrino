@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { Language, LANGUAGES } from './language';
 import { HeaderComponent } from "./header/header.component";
-import { HelpMenuComponent } from "./help_menu/help-menu.component";
 import { FooterComponent } from "./footer/footer.component";
 import { MainActivityComponent } from "./main_activity/main-activity.component";
 import { imageLinkData } from './app-data';
@@ -10,16 +9,10 @@ import { imageLinkData } from './app-data';
   selector: 'app-root',
   imports: [
     HeaderComponent,
-    HelpMenuComponent,
     FooterComponent,
     MainActivityComponent
   ],
   template: `
-  <app-help-menu
-    [language]="currentLanguage"
-    [isOpen]="isHelpMenuOpen"
-    (closeHelpMenuEvent)="closeHelpMenu()"
-  ></app-help-menu>
 
   <app-header
     [selectorOptions]="languageIdentifiers"

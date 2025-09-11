@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="100"
+viewBox="0 0 400 100" 
+class="logo-svg">
+
+    <style>
+.logo-svg {
+max-width: 100%;
+height: auto;
+font-family: sans-serif;
+}
+.main-text {
+font-size: 60px;
+fill: white;
+}
+    </style>
+
+    <text x="50%" y="65%" text-anchor="middle" class="main-text">
+        <tspan>D</tspan>
+        <tspan>i</tspan>
+        <tspan>a</tspan>
+        <tspan>c</tspan>
+        <tspan>r</tspan>
+        <tspan>í</tspan>
+        <tspan>n</tspan>
+        <tspan>ō</tspan>
+    </text>
+
+</svg>
